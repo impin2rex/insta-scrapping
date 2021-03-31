@@ -1,0 +1,24 @@
+{
+  "name": "insta-scrapping",
+  "version": "1.0.0",
+  "description": "Instagram public data scrapping using cheerio",
+  "main": "scrapper.js",
+  "scripts": {
+    "start": "node index",
+    "scrap": "nodemon index"
+  },
+  "keywords": [
+    "instagram scrapping",
+    "scrapper instagram",
+    "instagram scrapper"
+  ],
+  "author": "impin2rex",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "*",
+    "request-promise": "^4.2.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
