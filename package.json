@@ -1,5 +1,5 @@
 {
-  "name": "insta-scrapping",
+  "name": "insta-scrap",
   "version": "1.0.0",
   "description": "Instagram public data scrapping using cheerio",
   "main": "scrapper.js",
@@ -20,5 +20,13 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.7"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/impin2rex/insta-scrapping.git"
+  },
+  "bugs": {
+    "url": "https://github.com/impin2rex/insta-scrapping/issues"
+  },
+  "homepage": "https://github.com/impin2rex/insta-scrapping#readme"
 }
