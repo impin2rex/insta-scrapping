@@ -1,7 +1,7 @@
 const fetch = require("request-promise");
 const cheerio = require("cheerio");
 
-async function instascrap (USERNAME) {
+async function instascrapping (USERNAME) {
   const BASE_URL = `https://www.instagram.com/${USERNAME}/`;
   const response = await fetch(BASE_URL, {
     accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
@@ -48,4 +48,4 @@ async function instascrap (USERNAME) {
   return instaProfileDetails;
 }
 
-module.exports = instascrap;
+module.exports = instascrapping;

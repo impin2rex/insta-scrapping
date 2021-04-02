@@ -41,16 +41,16 @@ Scarpper requires [Node.js](https://nodejs.org/) to run.
 Install the dependencies and devDependencies and start the server.
 
 ```sh
-npm install insta-scrap --save
+npm install insta-scrapping --save
 ```
 
 ## Usage
 
 ```sh
-const instascrap = require("insta-scrap");
+const instascrapping = require("insta-scrapping");
 const USERNAME = "charlieputh"; // Instagram profile username
 (async() => {
-    const profile = await instascrap(USERNAME);
+    const profile = await instascrapping(USERNAME);
     console.log(profile);
 })();
 ```

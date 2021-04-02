@@ -1,5 +1,5 @@
 {
-  "name": "insta-scrap",
+  "name": "insta-scrapping",
   "version": "1.0.0",
   "description": "Instagram public data scrapping using cheerio",
   "main": "scrapper.js",
