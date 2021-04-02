@@ -2,7 +2,7 @@ const fetch = require("request-promise");
 const cheerio = require("cheerio");
 
 (async () => {
-  const USERNAME = "ileana_official";
+  const USERNAME = "impin2rex";
   const BASE_URL = `https://www.instagram.com/${USERNAME}/`;
   const response = await fetch(BASE_URL, {
     accept:
@@ -33,6 +33,30 @@ const cheerio = require("cheerio");
   } = JSON.parse(/window\._sharedData = (.+);/g.exec(script)[1]);
 
   /* Output the data */
-  console.log(user);
+  // console.log(user);
+
+  const instaProfileDetails = {
+    fullName: user.full_name,
+    username: user.username,
+    instaId: user.id,
+    fbId: user.fbid,
+    bio: user.biography,
+    isPrivate: user.is_private,
+    isVerified: user.is_verified,
+    profileImage: user.profile_pic_url_hd,
+    catagory: user.catagory_name,
+    website: user.external_url,
+    hasChannel: user.has_channel,
+    followers: user.edge_followed_by,
+    following: user.edge_follow,
+    img: user.edge_owner_to_timeline_media.edges[0], // To check image response
+    images: {
+      shortcode: user.edge_owner_to_timeline_media.edges.map((x) => x.node.shortcode),
+      thumbnail: user.edge_owner_to_timeline_media.edges.map((x) => x.node.thumbnail_src),
+      uploadedAt: user.edge_owner_to_timeline_media.edges.map((x) => x.node.taken_at_timestamp),
+      likes: user.edge_owner_to_timeline_media.edges.map((x) => x.node.edge_liked_by.count)
+    }
+}
+console.log(instaProfileDetails);
 })();
 
