@@ -43,7 +43,8 @@ async function instascrapping (USERNAME) {
     hasChannel: user.has_channel,
     followers: user.edge_followed_by,
     following: user.edge_follow,
-    images: user.edge_owner_to_timeline_media.edges.map((x) => x.node)
+    images: user.edge_owner_to_timeline_media.edges.map((x) => x.node),
+    relatedProfiles: user.edge_related_profiles.edges.map(x => x.node.username),
   };
   return instaProfileDetails;
 }
