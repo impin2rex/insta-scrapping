@@ -15,7 +15,7 @@
   "author": "impin2rex",
   "license": "ISC",
   "dependencies": {
-    "cheerio": "*",
+    "cheerio": "^1.0.0-rc.9",
     "request-promise": "^4.2.6"
   },
   "devDependencies": {
