@@ -1,4 +1,7 @@
 # Instagram-Scrapper
+## CHANGELOG
+[changelog]
+
 ## _Using Cheerio and instagram GhaphQL_
 
 [![impin2rex|workwithme](https://workwithme.in/assets/images/favicon.svg)](https://workwithme.in/)
@@ -432,6 +435,7 @@ ISC
 
    [impin2rex]: <https://github.com/impin2rex>
    [git-repo-url]: <https://github.com/impin2rex/insta-scrapping>
+   [changelog]: <https://github.com/impin2rex/insta-scrapping/blob/master/CHANGELOG.md>
    [cheerio]: <https://www.npmjs.com/package/cheerio>
    [request-promise]: <https://www.npmjs.com/package/request-promise>
    [nodemon]: <https://www.npmjs.com/package/nodemon>
